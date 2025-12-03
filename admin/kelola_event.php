@@ -3,38 +3,118 @@
 $dataEvent = [
     [
         "idEvent" => 1,
-        "namaEvent" => "Hackathon Nasional",
-        "organizer" => "Himatro",
-        "kontak" => "08123456789",
-        "harga" => "Rp 0",
-        "deskripsi" => "Kompetisi pemrograman tingkat nasional.",
-        "tanggalPesan" => "2025-11-20",
-        "tanggalSelesai" => "2025-12-20",
-        "status" => "Menunggu"
+        "namaEvent" => "Futsal Portela 2025",
+        "organizer" => "HIMATRO UNLA",
+        "kontak" => "@himatro.unila",
+        "harga" => "Rp 150.000",
+        "deskripsi" => "Kompetisi futsal tingkat kampus untuk mahasiswa dan umum",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-15",
+        "status" => "Aktif",
+        "lokasi" => "Gedung Serba Guna, Universitas Lampung",
+        "kategori" => "lomba",
+        "image" => "../assets/img/cover/portela.png"
     ],
     [
         "idEvent" => 2,
-        "namaEvent" => "Seminar AI & IoT",
-        "organizer" => "Nizam Al- Gifari",
-        "kontak" => "08881234566",
-        "harga" => "Rp 25.000",
-        "deskripsi" => "Seminar nasional dengan pembicara industri.",
-        "tanggalPesan" => "2025-11-10",
-        "tanggalSelesai" => "2025-12-10",
-        "status" => "Menunggu"
+        "namaEvent" => "Himatro Business Outdor",
+        "organizer" => "Deru Pratama",
+        "kontak" => "@himatro.unila",
+        "harga" => "Gratis",
+        "deskripsi" => "Bazar kegiatan mahasiswa yang menyediakan banyak macam makanan dan minuman hits.",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-20",
+        "status" => "Aktif",
+        "lokasi" => "Parkiran Mektan",
+        "kategori" => "bazar",
+        "image" => "../assets/img/cover/bazar.jpeg"
     ],
     [
         "idEvent" => 3,
-        "namaEvent" => "Workshop Matematika",
-        "organizer" => "Himatika",
-        "kontak" => "08214567890",
-        "harga" => "Rp 50.000",
-        "deskripsi" => "Workshop intensif 1 hari Matematika.",
-        "tanggalPesan" => "2025-11-05",
-        "tanggalSelesai" => "2025-12-05",
-        "status" => "Aktif"
+        "namaEvent" => "COMVAGANZA 2025",
+        "organizer" => "Himakom",
+        "kontak" => "+62 812-3456-7890",
+        "harga" => "Rp 150.000",
+        "deskripsi" => "Konser musik akbar menampilkan band-band kampus dan artis nasional. Nikmati malam penuh musik, kuliner, dan kebersamaan.",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-25",
+        "status" => "Aktif",
+        "lokasi" => "Lapangan Bola Unila",
+        "kategori" => "konser",
+        "image" => "../assets/img/cover/konser.jpeg"
+    ],
+    [
+        "idEvent" => 4,
+        "namaEvent" => "Donor Darah Himatro",
+        "organizer" => "Nizam Al- Gifari",
+        "kontak" => "Fathan Syahbana(0812345678)",
+        "harga" => "Gratis",
+        "deskripsi" => "Donor darah Himatro X KSR Unila. Mari donorkan darah anda untuk menyelamatkan nyawa yang membutuhkan.",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-25 ",
+        "status" => "Aktif",
+        "lokasi" => "Gedung H, Fakultas Teknik",
+        "kategori" => "lainnya",
+        "image" => "../assets/img/cover/donor.jpeg"
+    ],
+    [
+        "idEvent" => 5,
+        "namaEvent" => "Seminar Nasional - Futura",
+        "organizer" => "Himtaro Unila",
+        "kontak" => "Nizam Al-Gifari(0812345678)",
+        "harga" => "Gratis",
+        "deskripsi" => "Implementasi teknologi di era digital 5.0",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-25",
+        "status" => "Aktif",
+        "lokasi" => "Zoom",
+        "kategori" => "seminar",
+        "image" => "../assets/img/cover/seminar.jpeg"
+    ],
+    [
+        "idEvent" => 6,
+        "namaEvent" => "Seminar Kebangsaan",
+        "organizer" => "Unila",
+        "kontak" => "Davi tholiatul Jaizy(0812345678)",
+        "harga" => "Gratis",
+        "deskripsi" => "Kebudayaan dan cinta tanah air",
+        "tanggalPesan" => "2025-12-04",
+        "tanggalSelesai" => "2025-12-30",
+        "status" => "Aktif",
+        "lokasi" => "GSG Unila",
+        "kategori" => "seminar",
+        "image" => "../assets/img/cover/seminar-kebangsaan.png"
+    ],
+    [
+        "idEvent" => 7,
+        "image" => "../assets/img/cover/hack.png",
+        "namaEvent" => "Hackathon Unila 2025",
+        "kategori" => "Lomba",
+        "organizer" => "Nizam Al- Gifari",
+        "kontak" => "0812345678",
+        "lokasi" => "Gedung H",
+        "harga" => "Rp 150.000",
+        "tanggalPesan" => "2025-12-12",
+        "tanggalSelesai" => "2025-12-23",
+        "tanggal" => "2025-12-23",
+        "status" => "Menunggu"
+    ],
+    [
+        "idEvent" => 8,
+        "image" => "../assets/img/cover/poster.png",
+        "namaEvent" => "Lomba Desain Poster Nasioanl 2025",
+        "kategori" => "Lomba",
+        "organizer" => "Nizam Al- Gifari",
+        "lokasi" => "Gedung H",
+        "harga" => "Rp 15.000",
+        "kontak" => "0812345678",
+        "tanggalPesan" => "2025-12-06",
+        "tanggalSelesai" => "2025-12-22",
+        "tanggal" => "2025-12-22",
+        "status" => "Menunggu Pembayaran"
     ]
 ];
+
 ?>
 
 <div class="content-wrapper">
@@ -92,7 +172,7 @@ $dataEvent = [
                               echo 'warning';
                             }else if($e['status'] == 'Aktif') {
                               echo 'success';
-                            }
+                            }else if($e['status'] == 'Menunggu Pembayaran') echo 'info';
                             ?>"><?= $e['status'] ?></span></td>
 
                             <td>

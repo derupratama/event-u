@@ -23,7 +23,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>124</h3>
+                <h3>8</h3>
                 <p>Total Event Diajukan</p>
               </div>
               <div class="icon"><i class="fas fa-calendar-plus"></i></div>
@@ -34,7 +34,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>32</h3>
+                <h3>1</h3>
                 <p>Event Menunggu Persetujuan</p>
               </div>
               <div class="icon"><i class="fas fa-hourglass-half"></i></div>
@@ -45,7 +45,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>68</h3>
+                <h3>6</h3>
                 <p>Event Aktif</p>
               </div>
               <div class="icon"><i class="fas fa-check-circle"></i></div>
@@ -56,7 +56,7 @@
           <div class="col-lg-3 col-6">
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>84</h3>
+                <h3>7 </h3>
                 <p>Total User</p>
               </div>
               <div class="icon"><i class="fas fa-users"></i></div>
@@ -75,7 +75,7 @@
             <!-- PIE CHART -->
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title"><i class="fas fa-chart-pie mr-1"></i> Statistik Kategori Event</h3>
+                <h3 class="card-title"><i class="fas fa-chart-pie mr-1"></i> Statistik Kategori Event Aktif</h3>
               </div>
               <div class="card-body">
                 <canvas id="pieKategori" height="280"></canvas>
@@ -94,16 +94,16 @@
               <div class="card-footer bg-transparent">
                 <div class="row">
                   <div class="col-4 text-center">
-                    <h3 class="text-white">1.2k</h3>
-                    <p class="text-white">Visitor</p>
+                    <h3 class="text-white">1200</h3>
+                    <p class="text-white">Pengunjung</p>
                   </div>
                   <div class="col-4 text-center">
-                    <h3 class="text-white">92</h3>
-                    <p class="text-white">Review</p>
+                    <h3 class="text-white">6</h3>
+                    <p class="text-white">Event Disetujui</p>
                   </div>
                   <div class="col-4 text-center">
-                    <h3 class="text-white">Rp 12jt</h3>
-                    <p class="text-white">Total Income</p>
+                    <h3 class="text-white">Rp 120.000</h3>
+                    <p class="text-white">Total Pemasukan</p>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
 var dataKategori = {
     labels: ["Seminar", "Lomba", "Bazar", "Konser", "Lainnya"],
     datasets: [{
-        data: [12, 8, 5, 3, 6],
+        data: [2, 1, 1, 1, 1],
         backgroundColor: ['#007bff', '#28a745', '#ffc107', '#dc3545', '#6f42c1'],
     }]
 };

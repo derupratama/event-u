@@ -10,6 +10,7 @@ if (!isset($_SESSION['role'])) {
 $username = $_SESSION['username'];
 $role = $_SESSION['role'];
 
+$user = query("SELECT * FROM user WHERE username = '$username' ")[0];
 
 
 ?>
@@ -70,9 +71,9 @@ $role = $_SESSION['role'];
           <i class="fa fa-user"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">Nama Akun</span>
+          <span class="dropdown-item dropdown-header"><?= $user['namaLengkap'] ?></span>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
+          <a href="#" data-toggle="modal" data-target="#modal-setting"class="dropdown-item">
             <i class="fa fa-cog"></i> Settings
           </a>
           <div class="dropdown-divider"></div>
@@ -186,6 +187,60 @@ $role = $_SESSION['role'];
   require $pages . '.php';
 
   ?>
+
+  <div class="modal fade" id="modal-setting">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+
+            <form method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Setting Profil</h4>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" name="idEvent" id="edit_id">
+
+                    <div class="form-group">
+                        <label>Role</label>
+                        <input type="text" id="edit_nama" value="<?= $user['role'] ?>" disabled class="form-control" name="namaEvent">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Nama Pengguna/Organisasi</label>
+                        <input type="text" id="edit_nama" value="<?= $user['namaLengkap']?>" class="form-control" name="namaEvent">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="edit_nama" value="<?= $user['username'] ?>" class="form-control" name="namaEvent">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ganti Password</label>
+                        <input type="password" id="edit_nama" class="form-control" name="namaEvent">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Konfirmasi Password</label>
+                        <input type="password" id="edit_harga" class="form-control" name="harga">
+                        <small>Note : Masukkan jika hanya ingin mengganti passsword</small>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Batal</button>
+                    <button class="btn btn-primary">Simpan Perubahan</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
   
   <!-- /.content-wrapper -->
   <footer class="main-footer">

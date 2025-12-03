@@ -793,81 +793,93 @@
 
     <script>
         // Sample Events Data
-        const eventsData = [
-            {
-                id: 1,
-                title: "Futsal Portela 2025",
-                category: "lomba",
-                date: "2025-12-15",
-                location: "Gedung Serba Guna, Universitas Lampung",
-                price: "Rp 150.000",
-                organizer: "HIMATRO UNLA",
-                description: "Kompetisi futsal tingkat kampus untuk mahasiswa dan umum",
-                contact: "@himatro.unila",
-                image: "../assets/img/cover/image.png"
-            },
-            {
-                id: 2,
-                title: "Himatro Business Outdor",
-                category: "bazar",
-                date: "2025-11-20",
-                location: "Parkiran Mektan",
-                price: "Gratis",
-                organizer: "Deru Pratama",
-                description: "Bazar kegiatan mahasiswa yang menyediakan banyak macam makanan dan minuman hits.",
-                contact: "@himatro.unila",
-                image: "../assets/img/cover/bazar.jpeg"
+       const eventsData = [
+    {
+        id: 1,
+        title: "Futsal Portela 2025",
+        category: "lomba",
+        tanggalPesan: "2025-12-05",
+        tanggalPelaksanaan: "2025-12-15",
+        tanggalSelesai: "2025-12-20",
+        location: "Gedung Serba Guna, Universitas Lampung",
+        price: "Rp 150.000",
+        organizer: "HIMATRO UNLA",
+        description: "Kompetisi futsal tingkat kampus untuk mahasiswa dan umum",
+        contact: "@himatro.unila",
+        image: "../assets/img/cover/portela.png"
+    },
+    {
+        id: 2,
+        title: "Himatro Business Outdor",
+        category: "bazar",
+        tanggalPesan: "2025-12-10",
+        tanggalPelaksanaan: "2025-12-20",
+        tanggalSelesai: "2025-12-25",
+        location: "Parkiran Mektan",
+        price: "Gratis",
+        organizer: "Deru Pratama",
+        description: "Bazar kegiatan mahasiswa yang menyediakan banyak macam makanan dan minuman hits.",
+        contact: "@himatro.unila",
+        image: "../assets/img/cover/bazar.jpeg"
+    },
+    {
+        id: 3,
+        title: "COMVAGANZA 2025",
+        category: "konser",
+        tanggalPesan: "2025-11-25",
+        tanggalPelaksanaan: "2025-12-05",
+        tanggalSelesai: "2025-12-10",
+        location: "Lapangan Bola Unila",
+        price: "Rp 150.000",
+        organizer: "Himakom",
+        description: "Konser musik akbar menampilkan band-band kampus dan artis nasional. Nikmati malam penuh musik, kuliner, dan kebersamaan bersama ribuan mahasiswa.",
+        contact: "+62 812-3456-7890",
+        image: "../assets/img/cover/konser.jpeg"
+    },
+    {
+        id: 4,
+        title: "Donor Darah Himatro",
+        category: "lainnya",
+        tanggalPesan: "2025-12-08",
+        tanggalPelaksanaan: "2025-12-25",
+        tanggalSelesai: "2025-12-30",
+        location: "Gedung H, Fakultas Teknik",
+        price: "Gratis",
+        organizer: "Nizam Al- Gifari",
+        description: "Donor darah Himatro X KSR Unila. Mari donorkan darah anda untuk menyelamatkan ribuan nyawa yang membutuhkan",
+        contact: "Fathan Syahbana(0812345678)",
+        image: "../assets/img/cover/donor.jpeg"
+    },
+    {
+        id: 5,
+        title: "Seminar Nasional - Futura",
+        category: "seminar",
+        tanggalPesan: "2025-12-05",
+        tanggalPelaksanaan: "2025-12-25",
+        tanggalSelesai: "2025-12-30",
+        location: "Zoom",
+        price: "Gratis",
+        organizer: "Himtaro Unila",
+        description: "Implementasi teknologi di era digital 5.0",
+        contact: "Nizam Al-Gifari(0812345678)",
+        image: "../assets/img/cover/seminar.jpeg"
+    },
+    {
+        id: 6,
+        title: "Seminar Kebangsaan",
+        category: "seminar",
+        tanggalPesan: "2025-12-01",
+        tanggalPelaksanaan: "2025-12-06",
+        tanggalSelesai: "2025-12-12",
+        location: "GSG Unila",
+        price: "Gratis",
+        organizer: "Unila",
+        description: "Kebudayaan dan cinta tanah air",
+        contact: "Davi tholiatul Jaizy(0812345678)",
+        image: "../assets/img/cover/seminar-kebangsaan.png"
+    }
+];
 
-            },
-            {
-                id: 3,
-                title: "COMVAGANZA 2025",
-                category: "konser",
-                date: "2025-12-01",
-                location: "Lapangan Bola Unila",
-                price: "Rp 150.000",
-                organizer: "Himakom",
-                description: "Konser musik akbar menampilkan band-band kampus dan artis nasional. Nikmati malam penuh musik, kuliner, dan kebersamaan bersama ribuan mahasiswa.",
-                contact: "+62 812-3456-7890",
-                image: "../assets/img/cover/konser.jpeg"
-            },
-            {
-                id: 4,
-                title: "Donor Darah Himatro",
-                category: "lainnya",
-                date: "2025-11-25",
-                location: "Gedung H, Fakultas Teknik",
-                price: "Gratis",
-                organizer: "HIMATRO Unila",
-                description: "Donor darah Himatro X KSR Unila. Mari donorkan darah anda untuk menyelamatkan ribuan nyawa yang membutuhkan",
-                contact: "Fathan Syahbana",
-                image: "../assets/img/cover/donor.jpeg"
-            },
-            {
-                id: 5,
-                title: "Seminar Nasional - Futura",
-                category: "seminar",
-                date: "2025-11-25",
-                location: "Zoom",
-                price: "Gratis",
-                organizer: "Himtaro Unila",
-                description: "Implementasi teknologi di era digital 5.0",
-                contact: "Nizam Al-Gifari(0812345678)",
-                image: "../assets/img/cover/seminar.jpeg"
-            },
-            {
-                id: 6,
-                title: "Seminar Kebangsaan",
-                category: "seminar",
-                date: "2025-12-06",
-                location: "GSG Unila",
-                price: "Gratis",
-                organizer: "Unila",
-                description: "Kebudayaan dan cinta tanah air",
-                contact: "Davi tholiatul Jaizy",
-                image: "../assets/img/cover/seminar-kebangsaan.png"
-            },
-        ];
 
         // State
         let currentFilter = 'all';
@@ -974,7 +986,7 @@
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
                                 </svg>
-                                <span>${formatDate(event.date)}</span>
+                                <span>${formatDate(event.tanggalPelaksanaan)}</span>
                             </div>
                             <div class="event-meta-item">
                                 <svg class="event-meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
